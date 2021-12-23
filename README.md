@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# Food-choice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+[ ] 헤더
 
-In the project directory, you can run:
+- 로고
+- 로그인 기능
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[ ] 홈 페이지
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- 해당 페이지를 설명해줄 것
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[ ] 재료 페이지
 
-### `npm run build`
+- 재료를 선택 시 해당 재료가 쓰이는 음식 나열
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[ ] 건의 게시판 페이지
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 음식 추가 요청 및 건의 사항
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[ ] 순위 페이지
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 가장 많이 검색된 재료를 슬라이더 형식으로 나열
+- 가장 많이 검색된 음식을 슬라이더 형식으로 나열
