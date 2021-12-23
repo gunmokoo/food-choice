@@ -36,12 +36,6 @@ footer, header, hgroup, main, menu, nav, section {
 *[hidden] {
     display: none;
 }
-body {
-  font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif;
-  color:black;
-  line-height: 1;
-}
 menu, ol, ul {
   list-style: none;
 }
@@ -60,10 +54,16 @@ table {
 * {
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+}
+body {
+  background-color: ${(props) => props.theme.silver.lighter};
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:black;
+  line-height: 1;
 }
 `;
 

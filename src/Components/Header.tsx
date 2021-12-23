@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Nav = styled.nav`
@@ -6,27 +7,21 @@ const Nav = styled.nav`
   align-items: center;
   position: fixed;
   width: 100%;
+  height: 55px;
   top: 0;
-  background-color: black;
-  font-size: 14px;
-  padding: 20px 60px;
+  background-color: ${(props) => props.theme.black.lighter};
   color: white;
 `;
 
 const Col = styled.div`
   display: flex;
   align-items: center;
+  margin: 0px 20px;
 `;
 
 const Logo = styled.svg``;
 
-const Items = styled.ul`
-  display: flex;
-  align-items: center;
-`;
-
-const Item = styled.li`
-  margin-right: 20px;
+const Item = styled.span`
   color: ${(props) => props.theme.white.darker};
   transition: color 0.3s ease-in-out;
   &:hover {
@@ -34,20 +29,15 @@ const Item = styled.li`
   }
 `;
 
-const Search = styled.span`
-  color: white;
-  svg {
-    height: 25px;
-  }
-`;
-
 function Header() {
   return (
     <Nav>
       <Col>
-        <Items></Items>
+        <Item>FC2021</Item>
       </Col>
-      <Col></Col>
+      <Col>
+        <Link to="/login">Login</Link>
+      </Col>
     </Nav>
   );
 }
