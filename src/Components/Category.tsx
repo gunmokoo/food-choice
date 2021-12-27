@@ -7,7 +7,7 @@ const Nav = styled.nav`
   flex-direction: column;
   position: fixed;
   height: 95%;
-  left: 0;
+  margin-left: 30px;
   margin-top: 55px;
   color: black;
 `;
@@ -21,6 +21,9 @@ const List = styled.div<{ match: boolean }>`
   width: 120px;
   height: 100%;
   border-radius: 50px 0px 0px 50px;
+  border: 1px solid black;
+  border-right: ${(props) => (props.match ? "none" : "2px solid")};
+  box-shadow: -20px 10px 10px 5px rgba(0, 0, 0, 0.5);
 `;
 
 const Item = styled(Link)`

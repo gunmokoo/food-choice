@@ -1,4 +1,6 @@
+import Category from "../Components/Category";
+
 function Question() {
-  return <div></div>;
+  return <Category />;
 }
 export default Question;

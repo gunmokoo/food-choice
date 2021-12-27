@@ -1,4 +1,6 @@
+import Category from "../Components/Category";
+
 function Home() {
-  return <div></div>;
+  return <Category />;
 }
 export default Home;

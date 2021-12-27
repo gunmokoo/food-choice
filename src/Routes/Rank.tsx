@@ -1,4 +1,6 @@
+import Category from "../Components/Category";
+
 function Rank() {
-  return <div></div>;
+  return <Category />;
 }
 export default Rank;

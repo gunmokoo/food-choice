@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
+import { RecoilRoot } from "recoil";
 import App from "./App";
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
@@ -59,7 +60,7 @@ a {
   color: inherit;
 }
 body {
-  background-color: ${(props) => props.theme.silver.lighter};
+  background-color: ${(props) => props.theme.white.darker};
   font-weight: 300;
   font-family: 'Source Sans Pro', sans-serif;
   color:black;
@@ -69,10 +70,12 @@ body {
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <App />
-    </ThemeProvider>
+    <RecoilRoot>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <App />
+      </ThemeProvider>
+    </RecoilRoot>
   </React.StrictMode>,
   document.getElementById("root")
 );
