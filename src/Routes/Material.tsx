@@ -51,6 +51,7 @@ const Foods = styled.div`
 function Material() {
   const [click, setClick] = useState<string[]>([]);
   const [foodResult, setFoodResult] = useState<IFood[]>([]);
+  const [clickLength, setClickLength] = useState<number>(0);
 
   let mat: Array<string> = [];
   food.map((item) => mat.push(...item.material));
@@ -66,12 +67,28 @@ function Material() {
     }
   };
   const foodResulting = () => {
-    for (let i = 0; i < click.length; i++) {
-      setFoodResult(food.filter((prop) => prop.material.includes(click[i])));
+    if (clickLength < click.length) {
+      setClickLength(click.length);
+      setFoodResult((oldFood) => {
+        let newFood: IFood[] = [];
+        newFood = food.filter((prop) =>
+          prop.material.includes(click[click.length - 1])
+        );
+        return [...oldFood, ...newFood];
+      });
+    } else {
+      setClickLength(click.length);
+      setFoodResult([]);
+      setFoodResult((oldFood) => {
+        let newFood: IFood[] = [];
+        newFood = food.filter((prop) =>
+          prop.material.includes(click[click.length - 1])
+        );
+        return [...oldFood, ...newFood];
+      });
     }
   };
   useEffect(foodResulting, [click]);
-  console.log(foodResult);
   return (
     <>
       <Category />

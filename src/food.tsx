@@ -1,7 +1,7 @@
 export const food = [
   {
     id: 0,
-    name: "제육복음",
+    name: "제육볶음",
     material: ["돼지고기", "양파", "대파"],
     rank: 0,
     time: 30,
@@ -9,7 +9,7 @@ export const food = [
   {
     id: 1,
     name: "김치찌개",
-    material: ["돼지고기", "양파", "대파", "김치", "다진마늘"],
+    material: ["돼지고기", "다진마늘", "양파", "대파", "김치"],
     rank: 0,
     time: 60,
   },
